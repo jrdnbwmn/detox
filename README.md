@@ -1,3 +1,3 @@
 # Detox
 
-Detox is a beautiful, modern <a href="http://www.ghost.org>Ghost</a> theme under the MIT license.
+Detox is a beautiful, modern [Ghost](http://www.ghost.org) theme under the MIT license.
