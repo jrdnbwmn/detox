@@ -1,0 +1,38 @@
+{{!< default}}
+
+{{! The comment above "< default" means - insert everything in this file into
+    the {body} of the default.hbs template, which contains our header/footer. }}
+
+{{! The main content area on the homepage }}
+<main class="content" role="main">
+    
+    <div class="container">
+
+        {{! Each post will be output using this markup }}
+        {{#foreach posts}}
+    
+        <article class="{{post_class}}">
+            
+            <header class="post-header">
+                <h3 class="post-title"><a href="{{url}}">{{{title}}}</a></h3>
+                <p class="post-time"><time datetime="{{date format='YYYY-MM-DD'}}">{{date format="DD MMM YYYY"}}</time></p>
+            </header>
+            
+            <section class="post-excerpt">
+                <p>{{excerpt}}&hellip;</p>
+            </section>
+            
+            <footer class="post-footer">
+                <span><a href="{{url}}#comments"><i class="fa fa-comment"></i> Comments</a> &nbsp; &nbsp; <i class="fa fa-tag"></i> {{#if tags}}{{tags}}{{/if}}</span>
+            </footer>
+            
+        </article>
+    
+        {{/foreach}}
+    
+        {{!! After all the posts, we have the previous/next pagination links }}
+        {{pagination}}
+        
+    </div>
+
+</main>

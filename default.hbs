@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    
+    <head>
+        
+        <!-- Basics -->
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        
+        <title>{{meta_title}}</title>
+        
+        <!-- Meta -->
+        <meta name="description" content="{{meta_description}}">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="author" content="">
+        <meta name="keywords" content="awesome, definitely">
+
+        <!-- CSS: Normalize sheet first, minify everything for production -->
+        <link rel="stylesheet" type='text/css' href="/assets/scss/main.css"/>
+        
+        <!-- Import web fonts using the link tag instead of CSS @import: http://stackoverflow.com/questions/12316501/including-google-web-fonts-link-or-import -->
+        <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300|Montserrat:700' rel='stylesheet' type='text/css'>
+        
+        <!-- Font Awesome -->
+        <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+        
+        <!-- Favicon.ico and apple-touch-icon.png (according to Apple docs). A good tool is http://iconifier.net/ -->
+        <link rel="shortcut icon" href="assets/ico/favicon.ico">
+        <link rel="apple-touch-icon" href="touch-icon-iphone.png" />
+        <link rel="apple-touch-icon" sizes="76x76" href="touch-icon-ipad.png" />
+        <link rel="apple-touch-icon" sizes="120x120" href="touch-icon-iphone-retina.png" />
+        <link rel="apple-touch-icon" sizes="152x152" href="touch-icon-ipad-retina.png" />
+        
+        <!-- Mode requirements -->
+        <!-- 1. Moot style -->
+        <link rel="stylesheet" type="text/css" href="//cdn.moot.it/1/moot.css">
+        <!-- 2. jQuery library (v1.7+ required) -->
+        <script src="//code.jquery.com/jquery-1.10.2.min.js"></script>
+        <!-- 3. Moot application -->
+        <script src="//cdn.moot.it/1/moot.min.js"></script>
+        
+        {{! Ghost outputs important style and meta data with this tag }}
+        {{ghost_head}}
+        
+    </head>
+
+    <body class="{{body_class}}">
+        
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chrome/‎">install Google Chrome</a> to experience this site.</p>
+        <![endif]-->
+        
+        
+        {{! The header }}
+        <header id="site-header">
+            <div class="container">
+                {{#if @blog.logo}}<a id="blog-logo" href="{{@blog.url}}"><img src="{{@blog.logo}}" alt="Blog Logo" /></a>{{/if}}
+                <a href="{{@blog.url}}"  alt="Blog Title"><h1 class="blog-title">{{@blog.title}}</h1></a>
+                <p class="blog-description">{{@blog.description}}</p>
+            </div>
+        </header>
+        
+        
+        {{! Everything else gets inserted here }}
+        {{{body}}}
+        
+        
+        {{! The footer }}
+        <footer id="site-footer">
+            <div class="container">
+                <a href="{{@blog.url}}/rss/" title="Get the RSS feed"><span class="tooltip"><i class="fa fa-rss"></i></span></a>
+                <section>&copy; <a href="/">{{@blog.title}}</a> 2013 | All rights reserved</section>
+                <section>Theme by <a href="http://www.jrdnbwmn.com">Jordan Bowman</a>. Published with <a class="icon-ghost" href="http://ghost.org">Ghost</a>.</section>
+            </div>
+        </footer>
+        
+        
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <script>
+            var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+            (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+            g.src='//www.google-analytics.com/ga.js';
+            s.parentNode.insertBefore(g,s)}(document,'script'));
+        </script>
+        
+        {{! Ghost outputs important scripts and data with this tag }}
+        {{ghost_foot}}
+
+        {{! The main JavaScript file for Casper }}
+        <script type="text/javascript" src="/assets/js/index.js"></script>
+        
+    </body>
+
+</html>
