@@ -88,6 +88,9 @@ h1  {
     font-size: 60px;
 	font-size: 3.33333rem; // 60 / 18 = 3.3333
 	margin-bottom: 0.495em;
+    @media (max-width: 550px){
+        font-size: 50px;
+    }
 }
 
 
@@ -95,6 +98,9 @@ h2  {
     font-size: 48px;
 	font-size: 2.6667rem; // 48 / 18 = 2.6667
 	margin-bottom: 0.61875em;
+    @media (max-width: 550px){
+        font-size: 43px;
+    }
 }
 
 
@@ -102,6 +108,9 @@ h3  {
     font-size: 36px;
 	font-size: 2rem; // 36 / 18 = 2
 	margin-bottom: 0.825em;
+    @media (max-width: 550px){
+        font-size: 28px;
+    }
 }
 
 
@@ -109,6 +118,9 @@ h4  {
     font-size: 24px;
 	font-size: 1.3333333333333333rem; // 24 / 18 = 1.3333
 	margin-bottom: 1.2375em;
+    @media (max-width: 550px){
+        font-size: 22px;
+    }
 }
 
 
@@ -116,6 +128,9 @@ h5  {
     font-size: 21px;
 	font-size: 1.16667rem; // 21 / 18 = 1.1667
 	margin-bottom: 1.4142857142857141em; // measure( base font-size(18) * base line-height(1.65) ) / current font-size(21) = margin-bottom(1.4142857142857141)
+    @media (max-width: 550px){
+        font-size: 19px;
+    }
 }
 
 
@@ -123,6 +138,9 @@ h6  {
     font-size: 18px;
 	font-size: 1rem; /* 18 = 18 × 1 */
 	margin-bottom: 1.65em; // measure( base font-size(18) * base line-height(1.65) ) / current font-size(18) = margin-bottom(1.65)
+    @media (max-width: 550px){
+        font-size: 15px;
+    }
 }
 
 

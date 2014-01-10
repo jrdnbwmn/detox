@@ -20,6 +20,9 @@ html {
     overflow-y: scroll;
     min-height: 100%;
     -webkit-tap-highlight-color: rgba(0,0,0,0);
+    @media (max-width: 550px){
+        font-size: 15px;
+    }
 }
 
 
@@ -39,4 +42,7 @@ body {
 	-o-hyphens: auto;
 	hyphens: auto;
     word-wrap: break-word;
+    @media (max-width: 550px){
+        font-size: 15px;
+    }
 }

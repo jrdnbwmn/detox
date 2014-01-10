@@ -16,6 +16,10 @@
     height: 15em;
     padding-top: 7em;
     margin-bottom: 9em;
+    @media (max-width: 800px) {
+        padding-top: 4em !important;
+        margin-bottom: 4em !important;
+    }
 }
 
 
@@ -41,6 +45,9 @@
 
 .post {
     margin-bottom: 9em;
+    @media (max-width: 800px) {
+        margin-bottom: 7em !important;
+    }
 }
 
 
@@ -75,6 +82,9 @@
     text-align: center;
     margin: 4em 0 9em 0;
     color: $black-30;
+    @media (max-width: 800px) {
+        margin: 4em 0 6em 0 !important;
+    }
 }
 
 
@@ -117,7 +127,7 @@
     float: left;
     
     @media (max-width: 550px) {
-        float: none;
+        float: none !important;
     }
 }
 
@@ -137,7 +147,7 @@
     float: right;
     
     @media (max-width: 550px) {
-        float: none;
+        float: none !important;
     }
 }
 
@@ -151,7 +161,7 @@
     float: right;
     
     @media (max-width: 550px) {
-        float: none;
+        float: none !important;
     }
 }
 
@@ -160,13 +170,17 @@
     float: left;
     
     @media (max-width: 550px) {
-        float: none;
+        float: none !important;
+        margin-bottom: 1.5em;
     }
 }
 
 
 #comments {
     margin-top: 30px;
+    @media (max-width: 550px) {
+        margin-top: 1em;
+    }
 }
 
 

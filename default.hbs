@@ -19,7 +19,7 @@
         <meta name="keywords" content="awesome, definitely">
 
         <!-- CSS: Normalize sheet first, minify everything for production -->
-        <link rel="stylesheet" type='text/css' href="/assets/scss/main.css"/>
+        <link rel="stylesheet" type='text/css' href="/assets/css/main.css"/>
         
         <!-- Import web fonts using the link tag instead of CSS @import: http://stackoverflow.com/questions/12316501/including-google-web-fonts-link-or-import -->
         <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300|Montserrat:700' rel='stylesheet' type='text/css'>
@@ -56,12 +56,12 @@
         
         {{! The header }}
         <header id="site-header">
-            <div class="container">
+            <div class="container" style="width:100%;">
                 {{#if @blog.logo}}<a id="blog-logo" href="{{@blog.url}}"><img src="{{@blog.logo}}" alt="Blog Logo" /></a>{{/if}}
-                <a href="{{@blog.url}}"  alt="Blog Title"><h1 class="blog-title">{{@blog.title}}</h1></a>
+                <a href="{{@blog.url}}"  alt="Blog Title"><h1 class="blog-title heading">{{@blog.title}}</h1></a>
                 <p class="blog-description">{{@blog.description}}</p>
             </div>
-        </header>
+        </header>        
         
         
         {{! Everything else gets inserted here }}
@@ -76,7 +76,14 @@
                 <section>Theme by <a href="http://www.jrdnbwmn.com">Jordan Bowman</a>. Published with <a class="icon-ghost" href="http://ghost.org">Ghost</a>.</section>
             </div>
         </footer>
+
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+        <script src="http://code.jquery.com/ui/1.10.0/jquery-ui.js"></script>
+        <script type="text/javascript" src="/assets/js/fittext.js"></script>
         
+        <script type="text/javascript">
+          $(".heading").fitText();
+        </script>
         
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>
@@ -85,7 +92,7 @@
             g.src='//www.google-analytics.com/ga.js';
             s.parentNode.insertBefore(g,s)}(document,'script'));
         </script>
-        
+
         {{! Ghost outputs important scripts and data with this tag }}
         {{ghost_foot}}
 
