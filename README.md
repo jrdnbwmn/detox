@@ -29,7 +29,7 @@ To set up Moot comments, do the following:
 2. Inside your new forum, create a discussion section that you'll use for comments (most people just name it "Posts").
 3. Use a text editor to open the post.hbs file in this theme.
 4. Find this code in that file:
-
+	```
     <section id="comments">
         <a class="moot"
             title="{{title}}"
@@ -37,11 +37,11 @@ To set up Moot comments, do the following:
             Comments for this blog entry
         </a>
     </section>
-    
+    ```
 5. Replace "detox" with the name of the forum you created and "posts" with the name of the discussion section you created, like this:
-
+	```
     href="https://moot.it/i/your-forumname/your-discusionsection:{{title}}"
-    
+    ```
 Then you should be good to go!
 
 For more information: 
