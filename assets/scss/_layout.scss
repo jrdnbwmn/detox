@@ -13,7 +13,7 @@
 
 #site-header {
     text-align: center;
-    height: 15em;
+    min-height: 15em;
     padding-top: 7em;
     margin-bottom: 9em;
     @media (max-width: 800px) {
@@ -35,6 +35,13 @@
     letter-spacing: 4px;
     color: $black-30;
     font-size: 80%;
+}
+
+
+#blog-logo {
+    img {
+        margin: 0 auto 3em auto;
+    }
 }
 
 
