@@ -19,7 +19,7 @@
         <meta name="keywords" content="awesome, definitely">
 
         <!-- CSS: Normalize sheet first, minify everything for production -->
-        <link rel="stylesheet" type='text/css' href="/assets/css/main.css"/>
+        <link rel="stylesheet" type='text/css' href="{{asset "/css/main.css"}}"/>
         
         <!-- Import web fonts using the link tag instead of CSS @import: http://stackoverflow.com/questions/12316501/including-google-web-fonts-link-or-import -->
         <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300|Montserrat:700' rel='stylesheet' type='text/css'>
@@ -28,7 +28,7 @@
         <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
         
         <!-- Favicon.ico and apple-touch-icon.png (according to Apple docs). A good tool is http://iconifier.net/ -->
-        <link rel="shortcut icon" href="assets/ico/favicon.ico">
+        <link rel="shortcut icon" href="{{asset "/favicon.ico"}}">
         <link rel="apple-touch-icon" href="touch-icon-iphone.png" />
         <link rel="apple-touch-icon" sizes="76x76" href="touch-icon-ipad.png" />
         <link rel="apple-touch-icon" sizes="120x120" href="touch-icon-iphone-retina.png" />
@@ -79,7 +79,7 @@
 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
-        <script type="text/javascript" src="/assets/js/fittext.js"></script>
+        <script type="text/javascript" src="{{asset "/js/fittext.js"}}"></script>
         
         <script type="text/javascript">
           $(".heading").fitText();
@@ -97,7 +97,7 @@
         {{ghost_foot}}
 
         {{! The main JavaScript file for Casper }}
-        <script type="text/javascript" src="/assets/js/index.js"></script>
+        <script type="text/javascript" src="{{asset "/js/index.js"}}"></script>
         
     </body>
 
