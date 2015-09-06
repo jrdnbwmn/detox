@@ -2,7 +2,7 @@
 
 Detox is a beautiful, modern [Ghost](http://www.ghost.org) theme.
 
-#### → [See the demo](http://www.eatapapaya.com)
+#### → [See the demo](http://www.jrdnbwmn.com/blueberry/detox/lunch/)
 
 ## Features
 
