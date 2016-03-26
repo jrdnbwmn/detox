@@ -18,7 +18,7 @@ Detox is a beautiful, modern [Ghost](http://www.ghost.org) theme.
 ## Setting up comments
 Detox comes with Moot comments installed, but YOU'LL NEED TO SET UP MOOT FOR YOUR OWN BLOG.
 
-To set up Moot comments, do the following:
+To set up Moot comments, do the following
 1. Go to: [https://moot.it/](https://moot.it/) and create a new forum (near the bottom) and username for yourself.
 2. Inside your new forum, create a discussion section that you'll use for comments (most people just name it "Posts").
 3. Use a text editor to open the post.hbs file in this theme.
@@ -37,6 +37,16 @@ To set up Moot comments, do the following:
 For more information:
 - [https://moot.it/docs/embedding.html](https://moot.it/docs/embedding.html)
 - [https://ghost.org/forum/plugins/605-blog-comments-discus/?page=2](https://ghost.org/forum/plugins/605-blog-comments-discus/?page=2)
+
+## Setting up highlight JS
+Detox now uses [highlight JS](https://highlightjs.org/) to automatically style your code when posting.
+
+To change the default theme (github-gist)
+1. Download the latest release of highlight JS [here](https://github.com/isagalaev/highlight.js)
+2. Go to the highlight theme [demo](https://highlightjs.org/static/demo/) and find the theme you wish to use.
+3. Find the associated .css file with that theme -> `/src/styles/themeName.css`, then place it within `detox/assets/css`.
+4. Edit default.hbs with the new .css file, normally found on line 31.
+5. Enjoy!
 
 ## Setting up highlight JS
 Detox now uses [highlight JS](https://highlightjs.org/) to automatically style your code when posting.
