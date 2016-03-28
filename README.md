@@ -44,10 +44,20 @@ To set up Moot comments, do the following:
     ```
 Then you should be good to go!
 
-For more information: 
+For more information:
 - [https://moot.it/docs/embedding.html](https://moot.it/docs/embedding.html)
 - [https://ghost.org/forum/plugins/605-blog-comments-discus/?page=2](https://ghost.org/forum/plugins/605-blog-comments-discus/?page=2)
 
-## License
+## Setting up highlight JS
+Detox now uses [highlight JS](https://highlightjs.org/) to automatically style your code when posting.
 
+To change the default theme (github-gist):
+
+1. Download the latest release of highlight JS [here](https://github.com/isagalaev/highlight.js)
+2. Go to the highlight theme [demo](https://highlightjs.org/static/demo/) and find the theme you wish to use.
+3. Find the associated .css file with that theme -> `/src/styles/themeName.css`, then place it within `detox/assets/css`.
+4. Edit default.hbs with the new .css file, normally found on line 31.
+5. Enjoy!
+
+## License
 [MIT License](http://oswaldoacauan.mit-license.org/)
